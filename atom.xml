@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>落叶不归</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://say-leaving.github.io/"/>
+  <updated>2018-11-15T14:46:47.991Z</updated>
+  <id>https://say-leaving.github.io/</id>
+  
+  <author>
+    <name>luoye</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>yml语法简记</title>
+    <link href="https://say-leaving.github.io/2018/11/15/yaml%E8%AF%AD%E6%B3%95/"/>
+    <id>https://say-leaving.github.io/2018/11/15/yaml语法/</id>
+    <published>2018-11-15T14:41:26.407Z</published>
+    <updated>2018-11-15T14:46:47.991Z</updated>
+    
+    <content type="html"><![CDATA[<p>2、YAML语法：</p><p>1、基本语法</p><p>k:(空格)v：表示一对键值对（空格必须有）；</p><p>以空格的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">    port: 8081</span><br><span class="line">    path: /hello</span><br><span class="line">123</span><br></pre></td></tr></table></figure><p>属性和值是大小写敏感的；</p><p>2、值的写法</p><p>字面量：普通的值（数字，字符串，布尔）</p><p>k: v：字面直接来写；</p><p>字符串默认不用加上单引号或者双引号；</p><p>“”：双引号；不会转义字符串里面的特殊字符；特殊字符会作为本身想表示的意思name: “zhangsan \n lisi”：输出；zhangsan 换行 lisi</p><p>”：单引号；会转义特殊字符，特殊字符最终只是一个普通的字符串数据</p><p>name: ‘zhangsan \n lisi’：输出；zhangsan \n lisi</p><p>对象、Map（属性和值）（键值对）： </p><p>k: v</p><p>：在下一行来写对象的属性和值的关系；注意缩进</p><p>对象还是k: v的方式</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">friends:</span><br><span class="line">    lastName: zhangsan</span><br><span class="line">    age: <span class="number">20</span> </span><br><span class="line"><span class="number">123</span></span><br></pre></td></tr></table></figure><p>行内写法：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">friends: &#123;lastName: zhangsan,age: 20&#125;</span><br><span class="line">1</span><br></pre></td></tr></table></figure><p>数组（List、Set）：</p><p>用- 值表示数组中的一个元素</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pets:</span><br><span class="line">  ‐ cat</span><br><span class="line">  ‐ dog</span><br><span class="line">  ‐ pig</span><br><span class="line">1234</span><br></pre></td></tr></table></figure><p>行内写法</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pets: [cat,dog,pig]</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;2、YAML语法：&lt;/p&gt;
+&lt;p&gt;1、基本语法&lt;/p&gt;
+&lt;p&gt;k:(空格)v：表示一对键值对（空格必须有）；&lt;/p&gt;
+&lt;p&gt;以空格的缩进来控制层级关系；只要是左对齐的一列数据，都是同一个层级的&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tab
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试页面</title>
+    <link href="https://say-leaving.github.io/2018/11/15/hello-world/"/>
+    <id>https://say-leaving.github.io/2018/11/15/hello-world/</id>
+    <published>2018-11-15T05:43:34.752Z</published>
+    <updated>2018-11-15T14:45:11.358Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
